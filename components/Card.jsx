@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { HiCode } from "react-icons/hi";
 import { GoDatabase } from "react-icons/go";
 import { BsFillCaretDownFill } from "react-icons/bs";
+import { opacityVariant } from "../utils/motion";
 
 const Card = ({ title, id, index, active, handleHover, text }) => {
   return (
@@ -54,7 +55,14 @@ const Card = ({ title, id, index, active, handleHover, text }) => {
           <div className="py-5 px-2">
             <ul>
               {text.map(item => (
-                <li className="text-xl md:text-2xl mb-2">{item}</li>
+                <motion.li
+                  variants={opacityVariant(0.5, 0.15)}
+                  initial="hidden"
+                  animate="show"
+                  className="text-xl md:text-2xl mb-2"
+                >
+                  {item}
+                </motion.li>
               ))}
             </ul>
           </div>

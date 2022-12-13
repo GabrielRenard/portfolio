@@ -13,21 +13,24 @@ export const skills = [
 
 export const projects = [
   {
-    id: "project1",
-    title: "Project 1",
-    description: "This is a project",
-    imageUrl: "/images/project1.png",
+    id: "weather-app",
+    title: "Weather App",
+    technologies: ["React", "TailwindCSS", "OpenWeatherMap API"],
+    description:
+      "Weather App, part of the FullStackOpen course that uses the OpenWeatherMap API to fetch weather data for a given city.",
   },
   {
-    id: "project1",
-    title: "Project 1",
-    description: "This is a project",
-    imageUrl: "/images/project1.png",
+    id: "blog",
+    title: "AI Insider Blog",
+    technologies: ["React", "NextJS", "Sanity.io"],
+    description:
+      "A blog built using NextJS, Sanity CMS and Tailwind. The app uses data stored in Sanity.io to render the blog posts. The app also uses both server-side-rendering and static site generation.",
   },
   {
-    id: "project1",
-    title: "Project 1",
-    description: "This is a project",
-    imageUrl: "/images/project1.png",
+    id: "phonebook",
+    title: "Phonebook",
+    technologies: ["React", "NodeJS", "Express"],
+    description:
+      "A simple, full stack contacts storing app built using React, NodeJS and Express.",
   },
 ];
