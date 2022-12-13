@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" className="mb-[10rem]">
       <h1 className="text-4xl text-center mt-[5rem]">About Me</h1>
       <h2 className="text-xl text-center mt-2 mb-[5rem]">My Introduction</h2>
       <div className="grid md:grid-cols-2 lg:max-w-[1000px] mx-auto items-center place-items-center gap-[3rem]">
