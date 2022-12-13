@@ -127,3 +127,20 @@ body {
     border-radius: 50% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
+
+/* Animate Chevron */
+.chevron {
+  animation: animateChevron 1.5s ease-in-out infinite;
+}
+
+@keyframes animateChevron {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
