@@ -18,19 +18,27 @@ export const projects = [
     technologies: ["React", "TailwindCSS", "OpenWeatherMap API"],
     description:
       "Weather App, part of the FullStackOpen course that uses the OpenWeatherMap API to fetch weather data for a given city.",
+    liveLink: "fullstackopen2022-89iupk15b-gabrielrenard.vercel.app",
+    codeLink:
+      "https://github.com/GabrielRenard/fullstackopen2022/tree/main/part2/countries",
   },
   {
     id: "blog",
-    title: "AI Insider Blog",
-    technologies: ["React", "NextJS", "Sanity.io"],
+    title: "AI Insider",
+    technologies: ["React", "TypeScript", "NextJS", "Sanity.io"],
     description:
-      "A blog built using NextJS, Sanity CMS and Tailwind. The app uses data stored in Sanity.io to render the blog posts. The app also uses both server-side-rendering and static site generation.",
+      "A blog built using NextJS, Sanity CMS and Tailwind. Uses both server-side-rendering and static site generation.",
+    liveLink: "https://blog-ddu7c7co0-gabrielrenard.vercel.app/",
+    codeLink: "https://github.com/GabrielRenard/Blog",
   },
   {
     id: "phonebook",
     title: "Phonebook",
-    technologies: ["React", "NodeJS", "Express"],
+    technologies: ["React", "NodeJS", "Express", "Fly.io"],
     description:
-      "A simple, full stack contacts storing app built using React, NodeJS and Express.",
+      "A simple, full stack contacts storing app built using React, NodeJS and Express. Deployed on Fly.io.",
+    liveLink: "https://little-river-2513.fly.dev/",
+    codeLink:
+      "https://github.com/GabrielRenard/fullstackopen2022/tree/main/part2/phonebook",
   },
 ];

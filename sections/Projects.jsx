@@ -37,6 +37,8 @@ const Projects = () => {
               description={project.description}
               tech={project.technologies}
               index={index}
+              liveLink={project.liveLink}
+              codeLink={project.codeLink}
             />
           </SwiperSlide>
         ))}
