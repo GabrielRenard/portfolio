@@ -42,12 +42,14 @@ body {
 .gradient-02 {
   position: absolute;
   width: 200px;
-  height: 438px;
-  top: 0px;
-  right: 0px;
+  height: 600px;
+  top: 550px;
+  right: -150px;
+  z-index: -1;
 
   background: #7aebfb;
   filter: blur(190px);
+  transform: rotate(-23.2deg);
 }
 
 .gradient-03 {
@@ -58,7 +60,7 @@ body {
   top: 5%;
 
   background: rgba(149, 66, 232, 0.35);
-  filter: blur(175px);
+  filter: blur(200px);
   transform: rotate(-114.2deg);
 }
 
@@ -66,8 +68,8 @@ body {
   position: absolute;
   width: 304px;
   height: 100vh;
-  left: 30%;
-  top: 10%;
+  left: 90%;
+  top: -20%;
 
   background: rgba(45, 72, 152, 0.75);
   filter: blur(200px);
@@ -96,7 +98,7 @@ body {
 /* Glassmorphism */
 
 .glassmorphism {
-  background: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -154,7 +156,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #1a232e;
+  background: transparent;
 
   /* Center slide text vertically */
   display: -webkit-box;

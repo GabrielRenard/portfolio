@@ -8,7 +8,7 @@ const Card = ({ title, id, index, active, handleHover, text }) => {
   return (
     <motion.div
       id={id}
-      className={`glassmorphism rounded-md ${
+      className={`glassmorphism relative rounded-md ${
         active === id ? " h-[15rem] md:h-[16rem] lg:h-[17rem]" : " h-[2.5rem]"
       } flex items-center justify-center min-w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px] transition-[height] duration-[0.7s] ease-in-out cursor-pointer`}
       onHoverStart={() => handleHover(id)}
@@ -36,7 +36,7 @@ const Card = ({ title, id, index, active, handleHover, text }) => {
       {active === id && (
         <div className="absolute text-center top-0 w-full">
           <div className="flex items-center justify-between px-2">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 ">
               <span>
                 {id === "frontend" ? (
                   <HiCode size="2rem" />

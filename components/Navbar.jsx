@@ -8,17 +8,16 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className="hidden md:flex relative py-8 w-11/12 md:w-9/12 lg:w-7/12 mx-auto justify-between"
+      className="md:flex relative py-8 w-11/12 md:w-9/12 lg:w-7/12 mx-auto justify-between"
     >
       <div className="absolute w-full inset-0 gradient-01" />
-      <div className="absolute  inset-0 flex justify-between mx-auto items-center ">
+      <div className="absolute inset-0 flex justify-between mx-auto items-center">
         <div>
           <a href="#home" className="text-3xl">
             GR
           </a>
         </div>
-        <ul className="flex sm:space-x-[3rem] md:space-x-[3rem] lg:space-x-[4rem] lg:text-xl">
-          <a href="#home">Home</a>
+        <ul className="flex space-x-4 sm:space-x-[3rem] md:space-x-[3rem] lg:space-x-[4rem] lg:text-xl">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>

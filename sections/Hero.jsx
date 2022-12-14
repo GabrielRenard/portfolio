@@ -13,7 +13,10 @@ import { FiChevronDown } from "react-icons/fi";
 
 const Hero = () => {
   return (
-    <section id="home" className="p-5 lg:p-10">
+    <section
+      id="home"
+      className="px-5 lg:p-10 h-screen flex flex-col justify-center"
+    >
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -75,7 +78,7 @@ const Hero = () => {
         <motion.a
           variants={opacityVariant(2.5, 2)}
           whileHover={{ scale: 1.1 }}
-          className="md:mt-[5rem] mt-[1rem] self-center cursor-pointer flex flex-col items-center"
+          className="md:mt-[5rem] mt-0 self-center cursor-pointer flex flex-col items-center"
           href="#about"
         >
           <BsMouse size="2rem" />

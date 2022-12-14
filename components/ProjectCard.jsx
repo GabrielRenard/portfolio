@@ -1,5 +1,6 @@
 import { HiCode } from "react-icons/hi";
 import { AiFillEye } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const ProjectCard = ({
   title,
@@ -26,25 +27,35 @@ const ProjectCard = ({
           <h2 className="font-bold text-xl md:text-2xl">Built using:</h2>
           <ul>
             {tech.map((tech, index) => (
-              <li key={index} className="md:text-2xl">
+              <motion.li
+                key={index}
+                className="md:text-2xl"
+                whileHover={{ scale: 1.1 }}
+              >
                 {tech}
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
         <div className="flex justify-around items-center">
-          <div className="flex flex-col items-center">
+          <motion.div
+            className="flex flex-col items-center"
+            whileHover={{ scale: 1.1 }}
+          >
             <p>View Code</p>
             <a href={codeLink} target="_blank">
-              <HiCode size="2rem" className="" />
+              <HiCode size="2.5rem" className="" />
             </a>
-          </div>
-          <div className="flex flex-col items-center">
+          </motion.div>
+          <motion.div
+            className="flex flex-col items-center"
+            whileHover={{ scale: 1.1 }}
+          >
             <p>View Live</p>
             <a href={liveLink} target="_blank">
-              <AiFillEye size="2rem" />
+              <AiFillEye size="2.5rem" />
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
