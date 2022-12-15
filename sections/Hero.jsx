@@ -5,8 +5,7 @@ import {
   textVariant,
   opacityVariant,
 } from "../utils/motion";
-import styles from "../styles/index";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaWhatsappSquare } from "react-icons/fa";
 import { AiFillMessage } from "react-icons/ai";
 import { BsMouse } from "react-icons/bs";
 import { FiChevronDown } from "react-icons/fi";
@@ -34,21 +33,24 @@ const Hero = () => {
                 <motion.i whileHover={{ scale: 1.15 }}>
                   <FaGithub size="2rem" className="cursor-pointer" />
                 </motion.i>
+                <motion.i whileHover={{ scale: 1.15 }}>
+                  <FaWhatsappSquare size="2rem" className="cursor-pointer" />
+                </motion.i>
               </div>
             </motion.div>
             <motion.div
               variants={slideIn("right", "tween", 0.2, 1)}
               className=" md:order-1"
             >
-              <div className="blob" />
+              <div className="blob glassmorphism " />
             </motion.div>
 
-            <div className="w-11/12 sm:w-[500px] md:w-[400px] col-start-1 col-end-3 md:col-start-[2] md:col-end-[3] space-y-2 md:space-y-4 lg:space-y-6">
+            <div className="w-11/12 sm:w-[500px] md:w-[500px] lg:w-[500px] col-start-1 col-end-3 md:col-start-[2] md:col-end-[3] space-y-2 md:space-y-4 lg:space-y-6">
               <motion.h1
                 variants={textVariant(1.1)}
                 className="text-6xl font-extrabold"
               >
-                Hi, I'm Gabriel
+                Hi, I'm Gabriel.
               </motion.h1>
               <motion.div variants={textVariant(1.2)}>
                 <h2 className="text-4xl md:text-5xl font-bold">
@@ -62,15 +64,21 @@ const Hero = () => {
                 </p>
               </motion.div>
               <motion.div variants={slideIn("down", "tween", 1.4, 1)}>
-                <motion.button
-                  className="bg-yellow-500 p-2 md:p-3 text-xl text-zinc-900 rounded-full"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 1 }}
-                >
-                  <a href="#contact" className="flex items-center gap-2">
-                    Contact me <AiFillMessage size="2rem" />
-                  </a>
-                </motion.button>
+                <div className="relative group w-[220px]">
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-indigo-600 rounded-full w-[220px] blur-[5px] opacity-75 group-hover:opacity-100 transition-opacity duration-1000 ease-in-out group-hover:duration-200 animate-tilt" />
+                  <motion.button
+                    className="relative p-2 md:p-3 lg:p-4 text-xl btnGlassmorphism text-zinc-100 rounded-full w-[220px]"
+                    // whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 1 }}
+                  >
+                    <a
+                      href="#contact"
+                      className="flex items-center gap-2 leading-none uppercase font-bold tracking-wider"
+                    >
+                      Contact me <AiFillMessage size="2rem" />
+                    </a>
+                  </motion.button>
+                </div>
               </motion.div>
             </div>
           </div>

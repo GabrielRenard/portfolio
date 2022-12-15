@@ -1,12 +1,19 @@
 import { skills } from "../constants/index";
 import Card from "../components/Card";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { TypingAnimation } from "../components/TextAnimation";
-import { staggerContainer, fadeIn } from "../utils/motion";
+import {
+  staggerContainer,
+  fadeIn,
+  slideIn,
+  opacityVariant,
+} from "../utils/motion";
 
 const Skills = () => {
   const [active, setActive] = useState("frontend");
+  let { scrollYProgress } = useScroll();
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "120%"]);
 
   return (
     <>
@@ -29,19 +36,28 @@ const Skills = () => {
             My technical level
           </motion.p>
           <div className="mt-[5rem] flex justify-center">
+            <motion.img
+              variants={opacityVariant(1.5, 1)}
+              src="/Images/tool-dynamic-premium.png"
+              alt=""
+              className="absolute top-[-50px] z-[-1] w-[20rem]"
+              style={{ y }}
+            />
             <motion.div
-              variants={fadeIn("up", "tween", 1, 1)}
+              variants={fadeIn("up", "tween", 0.5, 1)}
               className="flex justify-center gap-[25px] sm:gap-[50px] md:gap-[75px] lg:gap-[100px]"
             >
               {skills.map((skill, index) => (
-                <Card
-                  title={skill.title}
-                  id={skill.id}
-                  index={index}
-                  text={skill.skills}
-                  active={active}
-                  handleHover={setActive}
-                />
+                <>
+                  <Card
+                    title={skill.title}
+                    id={skill.id}
+                    index={index}
+                    text={skill.skills}
+                    active={active}
+                    handleHover={setActive}
+                  />
+                </>
               ))}
             </motion.div>
           </div>

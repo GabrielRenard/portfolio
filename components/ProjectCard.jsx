@@ -40,7 +40,8 @@ const ProjectCard = ({
         <div className="flex justify-around items-center">
           <motion.div
             className="flex flex-col items-center"
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 1 }}
           >
             <p>View Code</p>
             <a href={codeLink} target="_blank">
@@ -49,7 +50,8 @@ const ProjectCard = ({
           </motion.div>
           <motion.div
             className="flex flex-col items-center"
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 1 }}
           >
             <p>View Live</p>
             <a href={liveLink} target="_blank">

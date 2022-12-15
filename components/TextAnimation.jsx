@@ -5,7 +5,7 @@ export const TypingAnimation = ({ title, textStyles }) => {
   return (
     <motion.p
       variants={textContainer}
-      className={`font-normal text-4xl ${textStyles}`}
+      className={`font-bold text-5xl ${textStyles}`}
     >
       {Array.from(title).map((letter, index) => (
         <motion.span variants={textVariant2} key={index}>

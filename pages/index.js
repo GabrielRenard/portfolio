@@ -8,9 +8,12 @@ export default function Home() {
     <div className="overflow-hidden ">
       <Hero />
       <div className="relative">
+        <div className="absolute inset-0 about-gradient" />
         <About />
-        <Skills />
+      </div>
+      <div className="relative">
         <div className="gradient-02 z-0" />
+        <Skills />
       </div>
       <div className="relative">
         <div className="gradient-03 z-0" />

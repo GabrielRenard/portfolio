@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { TypingAnimation } from "../components/TextAnimation";
 import {
   staggerContainer,
@@ -10,6 +10,9 @@ import {
 } from "../utils/motion";
 
 const About = () => {
+  let { scrollYProgress } = useScroll();
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "110%"]);
+
   return (
     <section id="about" className="h-screen flex flex-col">
       <motion.div
@@ -30,7 +33,7 @@ const About = () => {
             <img
               src={"/Images/profile2.jpg"}
               alt="profile image"
-              className="w-[250px] h-[300px] md:w-[300px] md:h-[350px] lg:w-[400px] lg:h-[450px] rounded-xl object-cover"
+              className="w-[250px] h-[300px] md:w-[300px] md:h-[350px] lg:w-[400px] lg:h-[450px] rounded-xl object-cover glassmorphism"
             />
           </motion.div>
 
@@ -42,7 +45,7 @@ const About = () => {
               I am looking for an entry level position in full-stack web
               development.
             </motion.p>
-            <div className="flex flex-col my-[2rem] md:my-0">
+            <div className="flex flex-col my-[2rem] md:my-0 relative w-full">
               <div className="flex justify-around text-center">
                 <div className="flex flex-col">
                   <motion.span
@@ -51,7 +54,7 @@ const About = () => {
                   >
                     1+
                   </motion.span>
-                  <motion.span variants={opacityVariant(1.5, 2)}>
+                  <motion.span variants={textVariant(1.3)}>
                     Years
                     <br />
                     Experience
@@ -64,19 +67,37 @@ const About = () => {
                   >
                     10+
                   </motion.span>
-                  <motion.span variants={opacityVariant(1.5, 2)}>
+                  <motion.span variants={textVariant(1.3)}>
                     Completed
                     <br />
                     Projects
                   </motion.span>
                 </div>
               </div>
+
               <motion.button
-                variants={textVariant(1.3)}
-                className="bg-yellow-500 text-zinc-900 w-1/2 rounded-full sm:w-1/3 md:w-8/12 self-center p-4 mt-[2rem] md:mt-[4rem] font-bold"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 1 }}
+                variants={textVariant(1.4)}
+                className="glassmorphism w-1/2 rounded-full sm:w-1/3 md:w-8/12 self-center mt-[2rem] md:mt-[4rem] font-bold p-2 md:p-3 lg:p-4 text-xl"
               >
-                Download CV
+                <a
+                  href="/files/CV_Gabriel_Renard_2022.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download
+                  className="gap-2 leading-none uppercase font-bold tracking-wider"
+                >
+                  Download CV
+                </a>
               </motion.button>
+              <motion.img
+                variants={opacityVariant(1.5, 1)}
+                src="/Images/copy-dynamic-premium.png"
+                alt=""
+                className="absolute z-[-1] w-[15rem] md:w-full inset-0"
+                style={{ y }}
+              />
             </div>
           </div>
         </div>

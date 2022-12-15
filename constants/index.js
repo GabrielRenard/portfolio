@@ -18,7 +18,7 @@ export const projects = [
     technologies: ["React", "TailwindCSS", "OpenWeatherMap API"],
     description:
       "Weather App, part of the FullStackOpen course that uses the OpenWeatherMap API to fetch weather data for a given city.",
-    liveLink: "fullstackopen2022-89iupk15b-gabrielrenard.vercel.app",
+    liveLink: "https://fullstackopen2022-sigma.vercel.app/",
     codeLink:
       "https://github.com/GabrielRenard/fullstackopen2022/tree/main/part2/countries",
   },
