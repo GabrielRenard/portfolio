@@ -15,7 +15,9 @@ const Navbar = () => {
         <div className="absolute inset-0 flex justify-between mx-auto items-center">
           <div>
             <a href="#home" className="text-2xl md:text-3xl lg:text-4xl">
-              <span className="font-sans text-zinc-300">GR</span>
+              <span className="font-sans text-zinc-300 hover:text-zinc-50 transition-colors duration-200 ease-in-out">
+                GR
+              </span>
             </a>
           </div>
           <ul className="flex text-lg font-bold space-x-4 sm:space-x-[3rem] md:space-x-[3rem] lg:space-x-[4rem] lg:text-xl">
@@ -33,7 +35,7 @@ const Navbar = () => {
             </motion.a>
           </ul>
           <a href="#about">
-            <ImSun size="1.5rem" className="cursor-pointer" />
+            <ImSun size="1.5rem" className="invisible cursor-pointer" />
           </a>
         </div>
       </motion.nav>
