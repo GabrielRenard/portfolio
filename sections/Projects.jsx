@@ -24,11 +24,11 @@ const Projects = () => {
       className="h-screen flex flex-col justify-center w-11/12 sm:w-10/12 md:w-8/12 lg:w-6/12 mx-auto"
       id="projects"
     >
-      <div className="h-[500px] relative">
+      <div className="relative">
         <TypingAnimation title="Projects" textStyles="text-center" />
         <motion.h2
           variants={fadeIn("up", "tween", 0.2, 1)}
-          className="text-xl text-center mt-2 mb-[2rem] lg:mb-[5rem]"
+          className="text-xl text-center "
         >
           Swipe to check out my latest projects
         </motion.h2>

@@ -24,14 +24,14 @@ const Contact = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="h-screen max-w-[600px] mx-auto relative"
+      className="h-screen flex flex-col justify-center max-w-[600px] mx-auto relative"
       id="contact"
     >
-      <div className="flex flex-col items-center relative">
+      <div className="flex flex-col justify-center items-center relative">
         <TypingAnimation title="Contact me" textStyles="text-center" />
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
-          className="text-xl text-center mt-2 mb-[2rem] lg:mb-[5rem] flex"
+          className="text-xl text-center flex"
         >
           Get in touch
         </motion.p>
@@ -39,12 +39,12 @@ const Contact = () => {
           variants={opacityVariant(2, 1)}
           src="/Images/chat-text-dynamic-premium.png"
           alt=""
-          className="absolute z-[-100] w-[15rem] top-[-12rem] right-0"
+          className="absolute z-[-100] w-[15rem] top-[-15rem] right-[-8rem]"
           style={{ y }}
         />
       </div>
 
-      <div className="flex flex-col items-center text-xl text-center mt-2 mb-[2rem] lg:mb-[5rem]">
+      <div className="flex flex-col items-center text-xl text-center mt-2">
         <motion.p
           variants={textVariant(1.1)}
           className="flex flex-col items-center"
@@ -59,7 +59,7 @@ const Contact = () => {
           onSubmit={handleSubmit}
           action="https://formspree.io/f/mbjbnnok"
           method="POST"
-          className="w-11/12 mx-auto flex flex-col gap-5"
+          className="w-11/12 mx-auto flex flex-col gap-5 mt-[2rem]"
         >
           <motion.div variants={textVariant(1.3)} className="flex flex-col">
             <label htmlFor="name" className="hidden">
@@ -114,7 +114,7 @@ const Contact = () => {
             whileTap={{ scale: 1 }}
             type="submit"
             disabled={state.submitting}
-            className="btnGlassmorphism rounded-full p-3 w-1/2 lg:w-1/3 mx-auto uppercase font-bold"
+            className="btnGlassmorphism rounded-full p-3 w-1/2 md:w-fit mx-auto uppercase font-bold"
           >
             Submit
           </motion.button>
