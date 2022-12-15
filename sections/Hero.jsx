@@ -89,7 +89,7 @@ const Hero = () => {
               </motion.div>
               <motion.div variants={slideIn("down", "tween", 1.4, 1)}>
                 <motion.button
-                  className="relative py-4 md:p-4 text-xl flex justify-center text-gray-50 rounded-full w-[80%] sm:w-[50%] bg-gradient-to-r from-[#d123e1] to-[#2362e1]"
+                  className="relative p-3 md:p-4 text-xl flex justify-center text-gray-50 rounded-full w-fit bg-gradient-to-r from-[#d123e1] to-[#2362e1]"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 1 }}
                 >

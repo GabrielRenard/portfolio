@@ -14,7 +14,10 @@ const About = () => {
   let y = useTransform(scrollYProgress, [0, 1], ["0%", "110%"]);
 
   return (
-    <section id="about" className="h-screen flex flex-col">
+    <section
+      id="about"
+      className="h-screen flex flex-col justify-center items-center"
+    >
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -33,11 +36,11 @@ const About = () => {
             <img
               src={"/Images/profile2.jpg"}
               alt="profile image"
-              className="w-[250px] background-shadow-pink h-[300px] md:w-[300px] md:h-[350px] lg:w-[400px] lg:h-[450px] rounded-xl object-cover "
+              className="w-[40vw] h-[50vw] background-shadow-pink  md:w-[35vw] md:h-[40vw] lg:w-[25vw] lg:h-[30vw] rounded-xl object-cover bg-center max-w-[350px]"
             />
           </motion.div>
 
-          <div className="grid md:grid-rows-2 px-[4rem]">
+          <div className="grid md:grid-rows-2">
             <motion.p
               variants={textVariant(1.1)}
               className="text-center text-2xl self-center"
@@ -79,14 +82,14 @@ const About = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 1 }}
                 variants={textVariant(1.4)}
-                className="btnGlassmorphism w-1/2 rounded-full sm:w-1/3 md:w-8/12 self-center mt-[2rem] md:mt-[4rem] font-bold p-2 md:p-3 lg:p-4 text-xl"
+                className="btnGlassmorphism w-fit rounded-full self-center mt-[2rem] font-bold p-4 text-xl"
               >
                 <a
                   href="/files/CV_Gabriel_Renard_2022.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   download
-                  className="gap-2 leading-none uppercase font-extrabold tracking-wider"
+                  className="leading-none uppercase font-extrabold tracking-wider"
                 >
                   Download CV
                 </a>
@@ -95,7 +98,7 @@ const About = () => {
                 variants={opacityVariant(1.9, 1)}
                 src="/Images/copy-dynamic-premium.png"
                 alt=""
-                className="absolute z-[-1] w-[15rem] md:w-full inset-0"
+                className="absolute z-[-1] max-w-[25rem] top-[-7rem] left-[6rem] w-[50vw] md:w-full md:left-0 md:right-0 bottom-0"
                 style={{ y }}
               />
             </div>
