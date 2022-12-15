@@ -45,7 +45,7 @@ const Skills = () => {
             />
             <motion.div
               variants={fadeIn("up", "tween", 0.5, 1)}
-              className="flex justify-center gap-[25px] sm:gap-[50px] md:gap-[75px] lg:gap-[100px]"
+              className="flex justify-center gap-[1rem] sm:gap-[50px] md:gap-[75px] lg:gap-[100px]"
             >
               {skills.map((skill, index) => (
                 <>

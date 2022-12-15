@@ -21,7 +21,7 @@ const Projects = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="h-screen w-11/12 sm:w-10/12 md:w-8/12 lg:w-6/12 mx-auto"
+      className="h-screen flex flex-col justify-center w-11/12 sm:w-10/12 md:w-8/12 lg:w-6/12 mx-auto"
       id="projects"
     >
       <div className="h-[500px] relative">
