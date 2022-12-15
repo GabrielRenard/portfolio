@@ -28,7 +28,7 @@ export const projects = [
     technologies: ["React", "TypeScript", "NextJS", "Sanity.io"],
     description:
       "A blog built using NextJS, Sanity CMS and Tailwind. Uses both server-side-rendering and static site generation.",
-    liveLink: "https://blog-ddu7c7co0-gabrielrenard.vercel.app/",
+    liveLink: "https://blog-gabrielrenard.vercel.app/",
     codeLink: "https://github.com/GabrielRenard/Blog",
   },
   {
