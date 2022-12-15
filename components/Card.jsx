@@ -56,6 +56,7 @@ const Card = ({ title, id, index, active, handleHover, text }) => {
             <ul>
               {text.map(item => (
                 <motion.li
+                  key={item}
                   variants={opacityVariant(0.5, 0.15)}
                   initial="hidden"
                   animate="show"

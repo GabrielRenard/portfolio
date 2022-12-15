@@ -44,7 +44,7 @@ const ProjectCard = ({
             whileTap={{ scale: 1 }}
           >
             <p>View Code</p>
-            <a href={codeLink} target="_blank">
+            <a href={codeLink} target="_blank" rel="noreferrer">
               <HiCode size="2.5rem" className="" />
             </a>
           </motion.div>
@@ -54,7 +54,7 @@ const ProjectCard = ({
             whileTap={{ scale: 1 }}
           >
             <p>View Live</p>
-            <a href={liveLink} target="_blank">
+            <a href={liveLink} target="_blank" rel="noreferrer">
               <AiFillEye size="2.5rem" />
             </a>
           </motion.div>
