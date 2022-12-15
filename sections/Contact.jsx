@@ -44,14 +44,8 @@ const Contact = () => {
         />
       </div>
 
-      <div className="flex flex-col items-center text-xl text-center mt-2">
-        <motion.p
-          variants={textVariant(1.1)}
-          className="flex flex-col items-center"
-        >
-          Call me
-        </motion.p>
-        <motion.p variants={textVariant(1.2)}>+33 695 474 166</motion.p>
+      <div className=" text-xl text-center mt-5">
+        <motion.p variants={textVariant(1.1)}>+33 695 474 166</motion.p>
       </div>
 
       <div>
@@ -114,7 +108,7 @@ const Contact = () => {
             whileTap={{ scale: 1 }}
             type="submit"
             disabled={state.submitting}
-            className="btnGlassmorphism rounded-full p-3 w-1/2 md:w-fit mx-auto uppercase font-bold"
+            className="btnGlassmorphism rounded-full p-3 w-1/2 mx-auto uppercase font-bold"
           >
             Submit
           </motion.button>
