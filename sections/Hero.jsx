@@ -9,6 +9,7 @@ import { FaLinkedin, FaGithub, FaWhatsappSquare } from "react-icons/fa";
 import { AiFillMessage } from "react-icons/ai";
 import { BsMouse } from "react-icons/bs";
 import { FiChevronDown } from "react-icons/fi";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -58,11 +59,12 @@ const Hero = () => {
               className=" md:order-1"
             >
               <motion.div className=" text-zinc-100">
-                <img
+                <Image
                   src="/Images/profile.png"
                   className="relative z-50 rounded-full object-cover blob"
-                  width={"300px"}
-                  height={"400px"}
+                  width={300}
+                  height={400}
+                  priority
                 />
               </motion.div>
             </motion.div>
