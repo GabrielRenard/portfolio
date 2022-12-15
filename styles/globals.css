@@ -144,8 +144,8 @@ h3 {
   background-color: rgba(209, 35, 225, 0.04);
   background-size: cover;
   background-position: center center;
-  height: 400px;
-  width: 300px;
+  height: 15rem;
+  width: 10rem;
   box-shadow: 0 0 1000px 5px rgba(209, 35, 225, 0.1);
 }
 

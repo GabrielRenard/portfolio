@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="px-5 lg:p-10 h-screen flex flex-col justify-center"
+      className="px-5 lg:p-10 md:mt-[5rem] h-screen flex flex-col self-center items-center"
     >
       <motion.div
         variants={staggerContainer}
@@ -25,7 +25,7 @@ const Hero = () => {
         className="flex flex-col"
       >
         <div className="grid">
-          <div className="grid mx-auto gap-5 md:gap-10 lg:gap-20 items-center smGrid md:grid-cols-[max-content,max-content,max-content]">
+          <div className="grid mx-auto md:gap-10 lg:gap-20 items-center smGrid md:grid-cols-[max-content,max-content,max-content]">
             <motion.div variants={slideIn("left", "tween", 0.2, 1)}>
               <div className="space-y-10 grid w-[2rem]">
                 <motion.a
@@ -69,7 +69,7 @@ const Hero = () => {
               </motion.div>
             </motion.div>
 
-            <div className="w-11/12 sm:w-[500px] md:w-[500px] lg:w-[500px] col-start-1 col-end-3 md:col-start-[2] md:col-end-[3] space-y-2 md:space-y-4 lg:space-y-6">
+            <div className="w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[35vw] col-start-1 col-end-3 md:col-start-[2] md:col-end-[3] space-y-5 md:space-y-4 lg:space-y-6">
               <motion.h1
                 variants={textVariant(1.1)}
                 className="text-6xl lg:text-7xl font-extrabold"
@@ -89,13 +89,13 @@ const Hero = () => {
               </motion.div>
               <motion.div variants={slideIn("down", "tween", 1.4, 1)}>
                 <motion.button
-                  className="relative p-3 md:p-4 lg:p-4 text-xl text-gray-50 rounded-full w-[220px] bg-gradient-to-r from-[#d123e1] to-[#2362e1]"
+                  className="relative py-4 md:p-4 text-xl flex justify-center text-gray-50 rounded-full w-[80%] sm:w-[50%] bg-gradient-to-r from-[#d123e1] to-[#2362e1]"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 1 }}
                 >
                   <a
                     href="#contact"
-                    className="flex items-center gap-2 leading-none uppercase font-bold tracking-wider h-full w-full"
+                    className="flex items-center gap-2 leading-none uppercase font-bold tracking-wider"
                   >
                     Contact me <AiFillMessage size="2rem" />
                   </a>
