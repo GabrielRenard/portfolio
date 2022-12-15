@@ -26,29 +26,51 @@ const Hero = () => {
         <div className="grid">
           <div className="grid mx-auto gap-5 md:gap-10 lg:gap-20 items-center smGrid md:grid-cols-[max-content,max-content,max-content]">
             <motion.div variants={slideIn("left", "tween", 0.2, 1)}>
-              <div className="space-y-10 grid">
-                <motion.i whileHover={{ scale: 1.15 }}>
+              <div className="space-y-10 grid w-[2rem]">
+                <motion.a
+                  whileHover={{ scale: 1.15 }}
+                  href="https://www.linkedin.com/in/gabriel-renard/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaLinkedin size="2rem" className="cursor-pointer" />
-                </motion.i>
-                <motion.i whileHover={{ scale: 1.15 }}>
+                </motion.a>
+                <motion.a
+                  whileHover={{ scale: 1.15 }}
+                  href="https://github.com/GabrielRenard"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaGithub size="2rem" className="cursor-pointer" />
-                </motion.i>
-                <motion.i whileHover={{ scale: 1.15 }}>
+                </motion.a>
+                <motion.a
+                  whileHover={{ scale: 1.15 }}
+                  href="https://wa.me/33695474166"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaWhatsappSquare size="2rem" className="cursor-pointer" />
-                </motion.i>
+                </motion.a>
               </div>
             </motion.div>
             <motion.div
               variants={slideIn("right", "tween", 0.2, 1)}
               className=" md:order-1"
             >
-              <div className="blob glassmorphism " />
+              <motion.div className=" text-zinc-100">
+                <img
+                  src="/Images/profile.png"
+                  className="relative z-50 rounded-full object-cover blob"
+                  width={"300px"}
+                  height={"400px"}
+                />
+              </motion.div>
             </motion.div>
 
             <div className="w-11/12 sm:w-[500px] md:w-[500px] lg:w-[500px] col-start-1 col-end-3 md:col-start-[2] md:col-end-[3] space-y-2 md:space-y-4 lg:space-y-6">
               <motion.h1
                 variants={textVariant(1.1)}
-                className="text-6xl font-extrabold"
+                className="text-6xl lg:text-7xl font-extrabold"
               >
                 Hi, I'm Gabriel.
               </motion.h1>
@@ -64,21 +86,18 @@ const Hero = () => {
                 </p>
               </motion.div>
               <motion.div variants={slideIn("down", "tween", 1.4, 1)}>
-                <div className="relative group w-[220px]">
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-indigo-600 rounded-full w-[220px] blur-[5px] opacity-75 group-hover:opacity-100 transition-opacity duration-1000 ease-in-out group-hover:duration-200 animate-tilt" />
-                  <motion.button
-                    className="relative p-2 md:p-3 lg:p-4 text-xl btnGlassmorphism text-zinc-100 rounded-full w-[220px]"
-                    // whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 1 }}
+                <motion.button
+                  className="relative p-3 md:p-4 lg:p-4 text-xl text-gray-50 rounded-full w-[220px] bg-gradient-to-r from-[#d123e1] to-[#2362e1]"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 1 }}
+                >
+                  <a
+                    href="#contact"
+                    className="flex items-center gap-2 leading-none uppercase font-bold tracking-wider h-full w-full"
                   >
-                    <a
-                      href="#contact"
-                      className="flex items-center gap-2 leading-none uppercase font-bold tracking-wider"
-                    >
-                      Contact me <AiFillMessage size="2rem" />
-                    </a>
-                  </motion.button>
-                </div>
+                    Contact me <AiFillMessage size="2rem" />
+                  </a>
+                </motion.button>
               </motion.div>
             </div>
           </div>
@@ -86,7 +105,7 @@ const Hero = () => {
         <motion.a
           variants={opacityVariant(2.5, 2)}
           whileHover={{ scale: 1.1 }}
-          className="md:mt-[5rem] mt-0 self-center cursor-pointer flex flex-col items-center"
+          className="invisible md:mt-[5rem] mt-0 self-center cursor-pointer md:visible flex flex-col items-center"
           href="#about"
         >
           <BsMouse size="2rem" />

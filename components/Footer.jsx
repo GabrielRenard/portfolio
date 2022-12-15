@@ -23,14 +23,27 @@ const Footer = () => {
           Copyright &#169; 2022 - 2023 Gabriel. All Rights Reserved.
         </p>
         <div className="flex gap-4">
-          <FaLinkedin
-            size="1.5rem"
-            className="cursor-pointer hover:scale-110 transition-transform duration-100 ease-in-out"
-          />
-          <FaGithub
-            size="1.5rem"
-            className="cursor-pointer hover:scale-110 transition-transform duration-100 ease-in-out"
-          />
+          <a
+            href="https://www.linkedin.com/in/gabriel-renard/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FaLinkedin
+              size="1.5rem"
+              className="cursor-pointer hover:scale-110 transition-transform duration-100 ease-in-out"
+            />
+          </a>
+
+          <a
+            href="https://github.com/GabrielRenard"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FaGithub
+              size="1.5rem"
+              className="cursor-pointer hover:scale-110 transition-transform duration-100 ease-in-out"
+            />
+          </a>
         </div>
       </div>
     </motion.footer>

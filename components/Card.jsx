@@ -9,9 +9,12 @@ const Card = ({ title, id, index, active, handleHover, text }) => {
     <motion.div
       id={id}
       className={`glassmorphism relative rounded-md ${
-        active === id ? " h-[15rem] md:h-[16rem] lg:h-[17rem]" : " h-[2.5rem]"
-      } flex items-center justify-center min-w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px] transition-[height] duration-[0.7s] ease-in-out cursor-pointer`}
+        active === id
+          ? " h-[15rem] md:h-[16rem] lg:h-[18rem] xl:h-[19rem]"
+          : " h-[2.5rem]"
+      } flex items-center justify-center min-w-[200px] sm:w-[250px] md:w-[300px] lg:w-[450px] xl:w-[500px] transition-[height] duration-[0.7s] ease-in-out cursor-pointer`}
       onHoverStart={() => handleHover(id)}
+      onClick={() => handleHover(id)}
     >
       {active !== id && (
         <div className="absolute text-center top-0 flex items-center w-full justify-between px-2">
@@ -60,7 +63,7 @@ const Card = ({ title, id, index, active, handleHover, text }) => {
                   variants={opacityVariant(0.5, 0.15)}
                   initial="hidden"
                   animate="show"
-                  className="text-xl md:text-2xl mb-2"
+                  className="text-xl font-bold md:text-2xl mb-2"
                 >
                   {item}
                 </motion.li>

@@ -18,7 +18,7 @@ const Navbar = () => {
               <span className="font-sans text-zinc-300">GR</span>
             </a>
           </div>
-          <ul className="flex font-bold space-x-4 sm:space-x-[3rem] md:space-x-[3rem] lg:space-x-[4rem] lg:text-xl">
+          <ul className="flex text-lg font-bold space-x-4 sm:space-x-[3rem] md:space-x-[3rem] lg:space-x-[4rem] lg:text-xl">
             <motion.a whileHover={{ scale: 1.1 }} href="#about">
               About
             </motion.a>

@@ -36,7 +36,7 @@ const Contact = () => {
           Get in touch
         </motion.p>
         <motion.img
-          variants={opacityVariant(1.25, 1)}
+          variants={opacityVariant(2, 1)}
           src="/Images/chat-text-dynamic-premium.png"
           alt=""
           className="absolute z-[-100] w-[15rem] top-[-12rem] right-0"
@@ -71,10 +71,10 @@ const Contact = () => {
               name="name"
               placeholder="Name"
               required
-              className="p-2 rounded-sm glassmorphism"
+              className="p-2 rounded-sm glassmorphism placeholder-zinc-300 font-bold"
             />
           </motion.div>
-          <motion.div variants={textVariant(1.4)} className="flex flex-col">
+          <motion.div variants={textVariant(1.4)} className="flex flex-col ">
             <label htmlFor="email" className="hidden">
               Email Address
             </label>
@@ -84,7 +84,7 @@ const Contact = () => {
               name="email"
               required
               placeholder="Email"
-              className="p-2 rounded-sm glassmorphism"
+              className="p-2 rounded-sm glassmorphism placeholder-zinc-300 font-bold"
             />
             <ValidationError
               prefix="Email"
@@ -100,7 +100,7 @@ const Contact = () => {
               rows="8"
               cols="8"
               placeholder="Message"
-              className="rounded-md p-2 glassmorphism"
+              className="rounded-md p-2 glassmorphism placeholder-zinc-300 font-bold"
             />
             <ValidationError
               prefix="Message"
@@ -114,7 +114,7 @@ const Contact = () => {
             whileTap={{ scale: 1 }}
             type="submit"
             disabled={state.submitting}
-            className="glassmorphism rounded-full p-2 w-1/3 mx-auto uppercase font-bold"
+            className="btnGlassmorphism rounded-full p-3 w-1/2 lg:w-1/3 mx-auto uppercase font-bold"
           >
             Submit
           </motion.button>

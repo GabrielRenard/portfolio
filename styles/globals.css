@@ -34,7 +34,7 @@ h3 {
 .gradient-01 {
   background-image: linear-gradient(
     270deg,
-    rgb(209, 35, 225) 0%,
+    #d123e1 0%,
     rgb(209, 138, 234) 26%,
     hsl(257deg 70% 86%) 39%,
     rgb(206, 236, 253) 50%,
@@ -50,7 +50,7 @@ h3 {
     97.86deg,
     #a509ff 0%,
     #34acc7 53.65%,
-    #a134c7 100%
+    rgb(161, 52, 199) 100%
   );
 }
 
@@ -114,10 +114,10 @@ h3 {
 
 .glassmorphism {
   background-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(0.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   color: #0f172a;
 }
 
@@ -130,35 +130,29 @@ h3 {
 }
 
 .btnGlassmorphism {
-  background-color: rgba(0, 0, 0, 1);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* AnimatedBlob */
 .blob {
-  background: url("../public/Images/profile.png");
+  background: url("/Images/profile.png");
   -webkit-background-size: cover;
+  object-fit: cover;
+  background-color: rgba(209, 35, 225, 0.04);
   background-size: cover;
   background-position: center center;
-  height: 360px;
-  width: 260px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  animation: animate 5s ease-in-out infinite;
-  transition: all 1s ease-in-out;
+  height: 400px;
+  width: 300px;
+  box-shadow: 0 0 1000px 5px rgba(209, 35, 225, 0.1);
 }
 
-@keyframes animate {
-  0% {
-    border-radius: 50% 40% 30% 70%/60% 30% 70% 40%;
-  }
-  50% {
-    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-  }
-  100% {
-    border-radius: 50% 40% 30% 70%/60% 30% 70% 40%;
-  }
+.background-shadow-pink {
+  box-shadow: 0 8px 1000px 10px rgba(0, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 /* Animate Chevron */

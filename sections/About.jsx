@@ -33,7 +33,7 @@ const About = () => {
             <img
               src={"/Images/profile2.jpg"}
               alt="profile image"
-              className="w-[250px] h-[300px] md:w-[300px] md:h-[350px] lg:w-[400px] lg:h-[450px] rounded-xl object-cover glassmorphism"
+              className="w-[250px] background-shadow-pink h-[300px] md:w-[300px] md:h-[350px] lg:w-[400px] lg:h-[450px] rounded-xl object-cover "
             />
           </motion.div>
 
@@ -79,20 +79,20 @@ const About = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 1 }}
                 variants={textVariant(1.4)}
-                className="glassmorphism w-1/2 rounded-full sm:w-1/3 md:w-8/12 self-center mt-[2rem] md:mt-[4rem] font-bold p-2 md:p-3 lg:p-4 text-xl"
+                className="btnGlassmorphism w-1/2 rounded-full sm:w-1/3 md:w-8/12 self-center mt-[2rem] md:mt-[4rem] font-bold p-2 md:p-3 lg:p-4 text-xl"
               >
                 <a
                   href="/files/CV_Gabriel_Renard_2022.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   download
-                  className="gap-2 leading-none uppercase font-bold tracking-wider"
+                  className="gap-2 leading-none uppercase font-extrabold tracking-wider"
                 >
                   Download CV
                 </a>
               </motion.button>
               <motion.img
-                variants={opacityVariant(1.5, 1)}
+                variants={opacityVariant(1.9, 1)}
                 src="/Images/copy-dynamic-premium.png"
                 alt=""
                 className="absolute z-[-1] w-[15rem] md:w-full inset-0"
