@@ -37,7 +37,7 @@ export const projects = [
     technologies: ["React", "NodeJS", "Express", "Fly.io"],
     description:
       "A simple, full stack contacts storing app built using React, NodeJS and Express. Deployed on Fly.io.",
-    liveLink: "https://little-river-2513.fly.dev/",
+    liveLink: "https://phonebook-gabriel.fly.dev/",
     codeLink:
       "https://github.com/GabrielRenard/fullstackopen2022/tree/main/part2/phonebook",
   },
