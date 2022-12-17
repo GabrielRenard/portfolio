@@ -36,7 +36,7 @@ export const projects = [
     title: "Phonebook",
     technologies: ["React", "NodeJS", "Express", "Fly.io"],
     description:
-      "A simple, full stack contacts storing app built using React, NodeJS and Express. Deployed on Fly.io.",
+      "A simple, full-stack contacts storing MERN app with CRUD functionality. Deployed on Fly.io.",
     liveLink: "https://phonebook-gabriel.fly.dev/",
     codeLink:
       "https://github.com/GabrielRenard/fullstackopen2022/tree/main/part2/phonebook",
