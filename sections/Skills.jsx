@@ -6,7 +6,6 @@ import { TypingAnimation } from "../components/TextAnimation";
 import {
   staggerContainer,
   fadeIn,
-  slideIn,
   opacityVariant,
 } from "../utils/motion";
 

@@ -78,13 +78,12 @@ const Hero = () => {
               </motion.h1>
               <motion.div variants={textVariant(1.2)}>
                 <h2 className="text-4xl md:text-5xl font-bold">
-                  Full-Stack Developer
+                  Aspiring marketer with dev skills
                 </h2>
               </motion.div>
               <motion.div variants={textVariant(1.3)}>
                 <p className="text-2xl md:text-3xl font-medium">
-                  Young professional looking to start a career in web
-                  development
+                  Young professional looking to start a career in marketing
                 </p>
               </motion.div>
               <motion.div variants={slideIn("down", "tween", 1.4, 1)}>

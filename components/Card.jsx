@@ -10,9 +10,9 @@ const Card = ({ title, id, index, active, handleHover, text }) => {
       id={id}
       className={`glassmorphism relative rounded-md ${
         active === id
-          ? " h-[15rem] md:h-[16rem] lg:h-[18rem] xl:h-[19rem]"
+          ? " h-[18rem] md:h-[18rem] lg:h-[19rem]"
           : " h-[2.5rem]"
-      } flex items-center justify-center min-w-[170px] sm:w-[250px] md:w-[300px] lg:w-[450px] xl:w-[500px] transition-[height] duration-[0.7s] ease-in-out cursor-pointer`}
+      } flex items-center justify-center min-w-[190px] sm:w-[250px] md:w-[300px] lg:w-[450px] xl:w-[500px] transition-[height] duration-[0.7s] ease-in-out cursor-pointer`}
       onHoverStart={() => handleHover(id)}
       onClick={() => handleHover(id)}
     >

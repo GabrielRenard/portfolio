@@ -1,13 +1,13 @@
 export const skills = [
   {
-    id: "frontend",
-    title: "Frontend",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
+    id: "webdev",
+    title: "Web Dev",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Node.js"]
   },
   {
-    id: "backend",
-    title: "Backend",
-    skills: ["Node.js", "Express", "MongoDB", "Sanity.io"],
+    id: "marketing",
+    title: "Marketing",
+    skills: ["Google Analytics", "Google Tag Manager", "SEO Fundamentals", "Digital Marketing Fundamentals"],
   },
 ];
 
@@ -24,7 +24,7 @@ export const projects = [
   },
   {
     id: "blog",
-    title: "AI Insider",
+    title: "AI Insider Blog",
     technologies: ["React", "TypeScript", "NextJS", "Sanity.io"],
     description:
       "A blog built using NextJS, Sanity CMS and Tailwind. Uses both server-side-rendering and static site generation.",
@@ -32,13 +32,13 @@ export const projects = [
     codeLink: "https://github.com/GabrielRenard/Blog",
   },
   {
-    id: "phonebook",
-    title: "Phonebook",
-    technologies: ["React", "NodeJS", "Express", "Fly.io"],
+    id: "ecommerce",
+    title: "E-commerce Store",
+    technologies: ["Next.js", "Stripe", "Sanity.io"],
     description:
-      "A simple, full-stack contacts storing MERN app with CRUD functionality. Deployed on Fly.io.",
-    liveLink: "https://phonebook-gabriel.fly.dev/",
+      "An E-commerce store for sound systems, with integrated payments.",
+    liveLink: "https://ecommerce-gold-ten.vercel.app/",
     codeLink:
-      "https://github.com/GabrielRenard/fullstackopen2022/tree/main/part2/phonebook",
+      "https://github.com/GabrielRenard/ecommerce",
   },
 ];

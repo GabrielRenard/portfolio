@@ -45,8 +45,7 @@ const About = () => {
               variants={textVariant(1.1)}
               className="text-center text-2xl self-center"
             >
-              I am looking for an entry level position in full-stack web
-              development.
+              I am looking for an entry level position in marketing.
             </motion.p>
             <div className="flex flex-col my-[2rem] md:my-0 relative w-full">
               <div className="flex justify-around text-center">
@@ -61,6 +60,8 @@ const About = () => {
                     Years
                     <br />
                     Experience
+                    <br />
+                    programming
                   </motion.span>
                 </div>
                 <div className="flex flex-col">
@@ -71,7 +72,7 @@ const About = () => {
                     10+
                   </motion.span>
                   <motion.span variants={textVariant(1.3)}>
-                    Completed
+                    Programming
                     <br />
                     Projects
                   </motion.span>
