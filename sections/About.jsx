@@ -86,7 +86,7 @@ const About = () => {
                 className="btnGlassmorphism w-fit rounded-full self-center mt-[2rem] font-bold p-4 text-xl"
               >
                 <a
-                  href="/files/CV_Gabriel_Renard_2022.pdf"
+                  href="/files/Gabriel_Renard_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   download
