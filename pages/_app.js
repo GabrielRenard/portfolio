@@ -1,4 +1,4 @@
-import {analytics} from '@vercel/analytics/react';
+import {Analytics, analytics} from '@vercel/analytics/react';
 import "../styles/globals.css";
 import Layout from "../Layout/Layout";
 
@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
     <main className={`${Jiro.variable}`}>
       <Layout>
         <Component {...pageProps} />
+        <Analytics />
       </Layout>
     </main>
   );
