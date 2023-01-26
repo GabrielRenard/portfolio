@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { HiCode } from "react-icons/hi";
-import { GoDatabase } from "react-icons/go";
+import { BsMegaphoneFill } from "react-icons/bs";
 import { BsFillCaretDownFill } from "react-icons/bs";
 import { opacityVariant } from "../utils/motion";
 
@@ -19,13 +19,13 @@ const Card = ({ title, id, index, active, handleHover, text }) => {
       {active !== id && (
         <div className="absolute text-center top-0 flex items-center w-full justify-between px-2">
           <div className="flex gap-2 items-center">
-            {id === "frontend" ? (
+            {id === "webdev" ? (
               <span>
                 <HiCode size="2rem" />
               </span>
             ) : (
               <span>
-                <GoDatabase size="2rem" />
+                <BsMegaphoneFill size="2rem" />
               </span>
             )}
             <h1 className="text-2xl lg:text-3xl font-bold">{title}</h1>
@@ -41,10 +41,10 @@ const Card = ({ title, id, index, active, handleHover, text }) => {
           <div className="flex items-center justify-between px-2">
             <div className="flex items-center gap-2 ">
               <span>
-                {id === "frontend" ? (
+                {id === "webdev" ? (
                   <HiCode size="2rem" />
                 ) : (
-                  <GoDatabase size="2rem" />
+                  <BsMegaphoneFill size="2rem" />
                 )}
               </span>
               <h1 className="text-2xl lg:text-3xl font-bold justify-start">

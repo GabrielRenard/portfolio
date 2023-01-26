@@ -7,7 +7,7 @@ export const skills = [
   {
     id: "marketing",
     title: "Marketing",
-    skills: ["Google Analytics", "SEO Fundamentals", "Digital Marketing Fundamentals"],
+    skills: ["Google Analytics", "Google Tag Manager", "SEO Fundamentals", "Digital Marketing Fundamentals"],
   },
 ];
 

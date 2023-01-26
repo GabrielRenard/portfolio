@@ -57,11 +57,11 @@ const About = () => {
                     1+
                   </motion.span>
                   <motion.span variants={textVariant(1.3)}>
-                    Years
-                    <br />
-                    Experience
+                    Year
                     <br />
                     programming
+                    <br />
+                    experience
                   </motion.span>
                 </div>
                 <div className="flex flex-col">
