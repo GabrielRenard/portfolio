@@ -1,3 +1,4 @@
+import {analytics} from '@vercel/analytics/react';
 import "../styles/globals.css";
 import Layout from "../Layout/Layout";
 
