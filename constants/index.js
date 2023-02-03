@@ -14,10 +14,10 @@ export const skills = [
 export const projects = [
   {
     id: "3dObject",
-    title: "3D Object",
+    title: "3D Helmet",
     technologies: ["ThreeJS", "WebGL"],
     description:
-      "A 3D futuristic blender model in an environment map with HTML and Raycaster",
+      "A 3D blender model in an environment map, built using ThreeJS and WebGL",
     liveLink: "https://threejs-mixing-webgl-html-33bv.vercel.app/",
     codeLink:
       "https://github.com/GabrielRenard/threejs_mixing_webgl_html",
