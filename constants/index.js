@@ -13,14 +13,14 @@ export const skills = [
 
 export const projects = [
   {
-    id: "weather-app",
-    title: "Weather App",
-    technologies: ["React", "TailwindCSS", "OpenWeatherMap API"],
+    id: "3dObject",
+    title: "3D Object",
+    technologies: ["ThreeJS", "WebGL"],
     description:
-      "Weather App, part of the FullStackOpen course that uses the OpenWeatherMap API to fetch weather data for a given city.",
-    liveLink: "https://fullstackopen2022-sigma.vercel.app/",
+      "A 3D futuristic blender model in an environment map with HTML and Raycaster",
+    liveLink: "https://threejs-mixing-webgl-html-33bv.vercel.app/",
     codeLink:
-      "https://github.com/GabrielRenard/fullstackopen2022/tree/main/part2/countries",
+      "https://github.com/GabrielRenard/threejs_mixing_webgl_html",
   },
   {
     id: "blog",
