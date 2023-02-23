@@ -1,4 +1,4 @@
-import { AnalyticsWrapper } from './components/analytics';
+import { AnalyticsWrapper } from './components/analytics.js';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Head from 'next/head';
