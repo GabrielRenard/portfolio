@@ -54,7 +54,9 @@ const Projects = () => {
           className="mySwiper"
         >
           {projects.map((project, index) => (
-            <SwiperSlide>
+            <SwiperSlide
+            key={project.id}
+            >
               <ProjectCard
                 title={project.title}
                 description={project.description}

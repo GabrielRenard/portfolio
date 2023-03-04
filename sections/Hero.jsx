@@ -65,6 +65,7 @@ const Hero = () => {
                   width={300}
                   height={400}
                   priority
+                  alt="My profile picture"
                 />
               </motion.div>
             </motion.div>

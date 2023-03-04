@@ -47,8 +47,9 @@ const Skills = () => {
               className="flex justify-center gap-[1rem] sm:gap-[50px] md:gap-[75px] lg:gap-[100px]"
             >
               {skills.map((skill, index) => (
-                <>
+                
                   <Card
+                    key={skill.id}
                     title={skill.title}
                     id={skill.id}
                     index={index}
@@ -56,7 +57,6 @@ const Skills = () => {
                     active={active}
                     handleHover={setActive}
                   />
-                </>
               ))}
             </motion.div>
           </div>

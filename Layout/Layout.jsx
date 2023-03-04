@@ -1,4 +1,3 @@
-import { AnalyticsWrapper } from './components/analytics.js';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Head from 'next/head';
@@ -12,7 +11,6 @@ const Layout = ({ children }) => {
       <Navbar />
       <main>
         {children}
-        <AnalyticsWrapper/>
       </main>
       <Footer />
     </div>
